@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'screens/bordered_button.dart';
+import 'screens/bordered_elevated_button.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 void main() => runApp(App());
@@ -34,20 +34,15 @@ class HomePage extends StatelessWidget {
         width: double.infinity,
         height: double.infinity,
         padding: EdgeInsets.all(20),
-        color: Colors.grey[200],
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            BorderedButton(
+            BorderedElevatedButton(
               onPressed: () {},
-              buttonPrimaryColor: Colors.deepPurple,
-              buttonBorderColor: Colors.deepPurpleAccent,
+              buttonBackGroundColor: Colors.black87,
+              buttonBorderColor: Colors.black38,
               buttonChild: Text(
                 "NEXT",
-                style: TextStyle(
-                  fontSize: 22,
-                  fontWeight: FontWeight.w100,
-                ),
               ),
             ),
           ],
